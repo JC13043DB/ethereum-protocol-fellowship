@@ -6,52 +6,9 @@ timezone: Asia/Bangkok
 > 时区请参考以下列表，请移除 # 以后的内容
 
 timezone: Pacific/Honolulu # 夏威夷-阿留申标准时间 (UTC-10)
-
-timezone: America/Anchorage # 阿拉斯加标准时间 (UTC-9)
-
-timezone: America/Los_Angeles # 太平洋标准时间 (UTC-8)
-
-timezone: America/Denver # 山地标准时间 (UTC-7)
-
-timezone: America/Chicago # 中部标准时间 (UTC-6)
-
-timezone: America/New_York # 东部标准时间 (UTC-5)
-
-timezone: America/Halifax # 大西洋标准时间 (UTC-4)
-
-timezone: America/St_Johns # 纽芬兰标准时间 (UTC-3:30)
-
-timezone: America/Sao_Paulo # 巴西利亚时间 (UTC-3)
-
-timezone: Atlantic/Azores # 亚速尔群岛时间 (UTC-1)
-
-timezone: Europe/London # 格林威治标准时间 (UTC+0)
-
-timezone: Europe/Berlin # 中欧标准时间 (UTC+1)
-
-timezone: Europe/Helsinki # 东欧标准时间 (UTC+2)
-
-timezone: Europe/Moscow # 莫斯科标准时间 (UTC+3)
-
-timezone: Asia/Dubai # 海湾标准时间 (UTC+4)
-
-timezone: Asia/Kolkata # 印度标准时间 (UTC+5:30)
-
-timezone: Asia/Dhaka # 孟加拉国标准时间 (UTC+6)
-
-timezone: Asia/Bangkok # 中南半岛时间 (UTC+7)
-
-timezone: Asia/Shanghai # 中国标准时间 (UTC+8)
-
-timezone: Asia/Tokyo # 日本标准时间 (UTC+9)
-
-timezone: Australia/Sydney # 澳大利亚东部标准时间 (UTC+10)
-
-timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
-
 ---
 
-# zt2
+# dixia
 
 1. 自我介绍: 一名 Crypto 研究员
 2. 你认为你会完成本次残酷学习吗？Try my best
@@ -76,4 +33,28 @@ https://cs251.stanford.edu/lectures/lecture7.pdf [0]
 
 ### 2025.02.07
 
+Block Data Structure: world state root has MPT hash of all accounts on Ethereum.
+
+It takes 16tb to run an archive node rn.
+
+EVM still use stack (max: 1024) to execute code but with JUMP instruction code.
+
+Burn ether preventing off-chain fee refund agreement to proposers that I did not thought before. A proposer could create/encourage fake txs to farm more ether reward if eth not burn and refund gas fee off-chain. The fee they paid would be less than eth reward to block proposer which it is the case given there are eth inflation for block proposers. But why would proposer are incentivized to do this? they could just collect reward from block building with the trouble of creating fake txs unless the block reward is proportional to the txs they included?
+
+In bitcoin's world, miner has fixed cost for mining the block but they do get fee reward as well. So this could apply to Bitcoin as well
+
+### 2025.02.08
+
+#### Why would proposer engage into off-chain fee refund agreement
+
+It is not due to the block reward as it is not proportional to the txs they included. But for the following reason:
+
+1. Proposer could fake up transactions to create a impression/illusion of higher activity on the chain. Given if they could get the gas fee back the cost of artificially creating txs is very low (transaction fee + effort to inflate txs). But that would require you control majority of the validator nodes or can reliably predict the next block proposer. The former could be the case actually right now? given there are 2-3 block builder building most of the blocks.(builder == proposer?) 
+
+2. To bid up the gas fee so other users have to pay more to get their txs included. This could require the same condition as above. As you intentionally pay a higher gas fee but can recover most of it back. It would be in the interest of proposer to do so. This would apply to Bitcoin as well. If majority of mining pool has an agreement. Could very well be the case for other chains.
+
+#### 
+gas fee right felt like a spam preventing mechanism rather than a fee market which pricing different resources.
+
+encrypted mempool: total gas case has to be unencrypted. Cosmos has encrypted mempool. general idea is no complete solution available yet
 <!-- Content_END -->

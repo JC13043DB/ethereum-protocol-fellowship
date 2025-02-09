@@ -28,4 +28,37 @@ Note: 今日任務把 https://epf.wiki/#/ 簡單掃一遍，列一下這次共�
 
 TODO: 明日計畫看一下 protocol 目前的樹設計 MPT 和 Verkle Tree 的優劣之類的
 
+# 2025.02.07
+看來 MPT 和 Verkle 的主要差異就在 witness 證明，這邊只有簡介到時候會再花時間研究
+
+LMD GHOST + Casper FFG = Gasper (ETH2 目前的共識機制)
+
+DHT 是我蠻感興趣的部分，很好奇ETH 底層的 p2p 效率和路由如何構建
+以太目前設計和多數 DHT 不同的是，在 bittorrent 和 IPFS 這類產品都沒有一個明確的搜索目標，而在以太坊網路中最重要的就是最新區塊
+用過私有鏈一陣子，整體 p2p 大概是透過 enode:// + ip 和地址來互相獲取資訊，接下來就是 Gossipsub 裡面在做的事了
+
+整體把結構看了一下，ETH 和 ETH2 主要不同的點目前看來比較會 focus 在 Gasper 的實現，之後也可以深入研究下 Verkle 對於當前以太的好處
+
+TODO: 明天假日可以來看下 week0 + 1 的影片，如正常按照順序會順便看 EL 的介紹
+
+# 2025.02.08
+
+Protocol History 簡介: Frontier (創世區塊) -> Homestead (EIP-2, 7, 8) -> The Merge
+
+EL 的關鍵: State Transition Function
+過程大概可以列為下列步驟
+1. 獲取區塊頭 (Block Header)
+2. 驗證 blob gas
+3. 計算區塊頭
+4. Ommers Field 驗證叔區塊
+5. 區塊執行
+6. 標頭驗證
+7. 區塊添加
+8. 刪除舊區塊
+9. error handle
+
+# 2025.02.09
+gas 算式挺複雜的，看了一陣子
+以太坊在 EIP-1559 後的 gas 計算功能，這有再用以太的應該都挺熟的，Base Fee 的經濟估算我明天會和 Blob 一起看
+
 <!-- Content_END -->

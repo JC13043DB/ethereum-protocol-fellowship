@@ -17,16 +17,31 @@ timezone: Asia/Taipei
 
 <img width="684" alt="Screenshot 2025-02-06 at 9 39 37 PM" src="https://github.com/user-attachments/assets/e01e1ce5-9aeb-430b-b9a9-8d02b7c3ce8c" />
 
+### 2025.02.07
 
-### 2024.02.07
+今天先看了老師怎麼介紹第一週的內容，看了前二十分鐘。Ethereum Protocol 101 talk by Mario Havel on StreamEth
+想到自由軟體 « Logiciel libre » [free software]  同時參考 https://www.gnu.org/philosophy/free-sw.html 提及的 “free” as in “free speech” 這邊的意思是自由，不是免費。文件提到可借用法語和西語的 libre 自由。We sometimes call it “libre software,” borrowing the French or Spanish word for “free” as in freedom, to show we do not mean the software is gratis.
 
-筆記
+另外參考維基百科 https://en.wikipedia.org/wiki/Gratis_versus_libre 的介紹 "The adjective free in English is commonly used in one of two meanings: "at no monetary cost" (gratis) or "with little or no restriction" (libre)."
 
-### 2024.02.08
+自由軟體 https://fr.wikipedia.org/wiki/Logiciel_libre 
 
-筆記
+同時參考法語介紹 Qu'est-ce que le logiciel libre ? 
+https://www.gnu.org/philosophy/free-sw.fr.html#TransNote1
+Notes de traduction
+a. Free veut dire « libre », mais aussi « gratuit ».
 
-### 2024.02.09
+
+### 2025.02.08
+
+今日的學習主要是觀看 v 老師三十分鐘深入淺出以太坊 2022 年這場演講「Ethereum in 30 minutes by Vitalik Buterin | Devcon Bogotá」，也就是 Week 1 推薦的延伸學習內容 https://epf.wiki/#/eps/week1?id=implementations-and-development 看了前二十分鐘。
+
+https://youtu.be/UihMqcj-cqc?si=MqL3ac9Xg30LPJmE
+
+<img width="666" alt="Screenshot 2025-02-08 at 11 36 48 PM" src="https://github.com/user-attachments/assets/2c9dbd0f-ae2a-400d-b334-1ff23da9d45a" />
+
+
+### 2025.02.09
 
 筆記
 
